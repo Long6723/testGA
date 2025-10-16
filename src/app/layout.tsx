@@ -32,17 +32,15 @@ export default function RootLayout({
         {children}
       </body>
       <Script
-        id="google-analytics"
-        // strategy="lazyOnload"
-      >
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0N6G9RSZT8', {
-            page_path: window.location.pathname,
-            });
-          `}
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-0N6G9RSZT8"
+      ></Script>
+      <Script>
+        {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0N6G9RSZT8');  `}
       </Script>
     </html>
   );
