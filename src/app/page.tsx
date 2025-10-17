@@ -1,5 +1,5 @@
 import Page1 from "./page1/page";
-import Page2 from "./page2/page2";
+import Page2 from "./page2/page";
 
 export default function Home() {
   return (
@@ -102,7 +102,6 @@ export default function Home() {
     // </div>
     <>
       <Page1 />
-      <Page2 />
     </>
   );
 }
